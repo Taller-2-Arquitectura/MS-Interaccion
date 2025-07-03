@@ -8,8 +8,8 @@ const INTERACTIONS_DB_URI = "mongodb://admin:root@localhost:27019";
 
 async function getVideosFromSeparateDB() {
   const videoConnection = await mongoose.createConnection(VIDEOS_DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   });
 
   const VideoModel = videoConnection.model("Video", new mongoose.Schema({
